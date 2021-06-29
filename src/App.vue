@@ -1,5 +1,10 @@
 <template>
-  <TagInput v-model="tags" />
+  <TagInput
+    v-model="tags"
+    :options="['Hello', 'World']"
+    :allowCustom="true"
+    :showCount="true"
+  />
 </template>
 
 <script lang="ts">
